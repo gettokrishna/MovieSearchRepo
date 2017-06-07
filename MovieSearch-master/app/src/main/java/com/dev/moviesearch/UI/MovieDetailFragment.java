@@ -71,6 +71,7 @@ public class MovieDetailFragment extends Fragment {
         Picasso.with(this.getContext())
                 .load(image_url)
                 .placeholder(R.mipmap.loading_image)
+                .error(R.mipmap.ic_launcher)
                 .into(mMovieImageView);
 
         mMovieOverview.setText(mData.getString("Overview"));

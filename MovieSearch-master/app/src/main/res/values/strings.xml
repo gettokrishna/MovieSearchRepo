@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MovieSearch</string>
     <string name="search_btn_text">Submit</string>
-    <string name="search_place_holder">Movie Name goes here ...</string>
+    <string name="search_place_holder">Movie name goes here ...</string>
     <string name="home_page_title">Movie Search</string>
     <string name="detail_page_title">Movie Detail</string>
     <string name="no_records_msg">No Movies found with the supplied search criteria</string>

@@ -78,6 +78,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.view
         Picasso.with(mcontext)
                 .load(image_url)
                 .placeholder(R.mipmap.loading_image)
+                .error(R.mipmap.ic_launcher)
                 .resize(135, 135)
                 .centerCrop()
                 .into(holder.mMovieImageView);

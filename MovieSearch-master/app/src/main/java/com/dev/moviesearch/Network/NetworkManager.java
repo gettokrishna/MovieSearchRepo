@@ -16,7 +16,7 @@ public class NetworkManager  {
     /**
      *  This method ensures a Single Client connection object is active at any point of time with respective configured values to maintiain Caching, Connection pooling effectively.
      */
-    public static OkHttpClient getConnector(Context context) {
+    public synchronized static OkHttpClient getConnector(Context context) {
         if(client==null) {
             client = new OkHttpClient.Builder().connectTimeout(context.getResources().getInteger(R.integer.connectionTimeout), TimeUnit.MILLISECONDS).build();
         }

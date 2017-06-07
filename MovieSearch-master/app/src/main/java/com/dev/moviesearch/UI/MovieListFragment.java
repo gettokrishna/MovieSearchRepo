@@ -89,6 +89,13 @@ public class MovieListFragment extends Fragment {
         super.onPause();
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        listItemData.clear();
+        mAdapter = null;
+    }
+
     /**
      * getMovieResponse : This method is being called from Activity every time user enters a new Search criteria and submits for search.
      *                    It handles all clean up activities and prepares input data required before initiating a data fetch.
@@ -105,6 +112,8 @@ public class MovieListFragment extends Fragment {
         DataAsyncExtractor dataAsync = new DataAsyncExtractor();
         dataAsync.execute(bundle);
     }
+
+
 
     /**
      * DataAsyncExtractor : This class responsible for handling the data extraction on a background thread and update the results back to UI layer
