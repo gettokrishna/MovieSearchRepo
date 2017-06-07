@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">false</bool>
+    <integer name="connectionTimeout">4000</integer>
+    <string name="movie_api_token">e00f69b45bcdedcabfa7d6977f200b82</string>
+</resources>

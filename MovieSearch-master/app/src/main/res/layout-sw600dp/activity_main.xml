@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dev.moviesearch.UI.MainActivity">
+
+    <include layout="@layout/appbarlayout"/>
+
+    <LinearLayout
+        android:id="@+id/searchLayoutView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/searchTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="16sp"
+            android:hint="@string/search_place_holder"
+            android:background="@drawable/rounded_text_box"/>
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="80dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:text="@string/search_btn_text"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tabular_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/movieListContainer"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:id="@+id/movieDetailLayoutContainer"
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fallback_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:gravity="center"
+            android:layout_alignParentTop="@id/tabular_layout">
+            <TextView
+                android:id="@+id/fallback_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:text="@string/home_message"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

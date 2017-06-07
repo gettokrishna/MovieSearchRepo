@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MovieSearch</string>
+    <string name="search_btn_text">Submit</string>
+    <string name="search_place_holder">Movie Name goes here ...</string>
+    <string name="home_page_title">Movie Search</string>
+    <string name="detail_page_title">Movie Detail</string>
+    <string name="no_records_msg">No Movies found with the supplied search criteria</string>
+    <string name="data_response_failure_msg">Problem extracting data, please provide valid data.</string>
+    <string name="home_message">List out your Favourite movies data by searching with their names</string>
+    <string name="home_loading_msg">Please wait while the data is loading ...</string>
+
+</resources>
